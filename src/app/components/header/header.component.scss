@@ -1,0 +1,46 @@
+.menu-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+    background-color: rgb(21, 81, 229);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    color: #fff;
+}
+.search_form-wrapper {
+    border: 1px solid rgb(225, 229, 235);
+    border-radius: 8px;
+
+    &:focus-within {
+        border: 2px solid rgb(21, 81, 229);
+    }
+}
+
+.bell {
+    position: relative;
+}
+
+.bell::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150%;
+    height: 48px;
+    width: 1px;
+    background-color: rgb(225, 229, 235);
+}
+
+@media screen and (max-width: 1400px) {
+    .search_form-wrapper {
+        max-width: 540px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .header {
+        gap: 15px;
+    }
+}

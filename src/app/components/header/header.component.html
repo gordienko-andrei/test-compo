@@ -1,0 +1,40 @@
+<div class="header full-w w-8xl flex align-center gap-[24px] px-[24px] py-[16px] border-b-[1px] border-b-[#E2E4F0]">
+    <a routerLink="home" class="logo flex align-center">
+        <img src="assets/logo.svg" alt="logo" class="w-[144px] h-[28px] max-w-full self-center">
+    </a>
+    <button class="menu-btn">
+        <img src="assets/list_icon.svg" alt="list-icon" class="w-[24px] max-w-full">
+        Меню
+    </button>
+    <div class="search_form-wrapper flex align-center px-[16px] py-[8px] max-w-[730px] w-full ">
+        <form class="flex align-center grow max-w-[41rem]">
+          <input class="flex-grow outline-none" type="text" name="main_search" id="main_search" placeholder="Название запроса">
+        </form>
+        <div class="flex align-center justify-between gap-[12px]">
+          <button class="cross font-bold text-lg w-[24px]">&#x2715;</button>
+          <button class="search_btn w-[24px]">
+            <img src="assets/search_icon.svg" alt="search_icon">
+          </button>
+        </div>
+    </div> 
+    <button class="bell flex align-center justify-center">
+        <img class="flex self-center" src="assets/bell_icon.svg" alt="bell_icon">
+    </button>      
+    <button class="favourite_list flex align-center justify-center pl-4">
+        <img class="flex self-center hover:fill-red" src="assets/heart_icon.svg" alt="heart_icon">
+    </button>
+    <button class="cart-header-btn flex align-center justify-between gap-[12px] bg-[#F2F6FF] rounded-lg px-[24px] py-[12px] hover:bg-[#316CFC] hover:text-white hover:fill-white">
+        <img src="assets/cart_icon.svg" alt="cart_icon">
+        <p class="flex align-center justify-center">
+            {{ cartSum }}
+            <span>₽</span>
+        </p>          
+    </button>
+    <button class="profile flex items-center justify-center gap-[5px]">
+        <img src="assets/Avatar.svg" alt="profile_photo" class="w-[24px]">
+        <p>{{name}}</p>
+        <img src="assets/chevron_icon.svg" alt="chevron_icon" class="w-[24px]">
+    </button>
+</div>
+
+
