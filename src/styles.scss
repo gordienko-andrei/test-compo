@@ -3,6 +3,35 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+
+
+@layer base {
+  @font-face {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("assets/fonts/Gotham-Book.otf") format("otf");
+  }
+  @font-face {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("assets/fonts/Gotham-Medium.otf") format("otf");
+  }
+  @font-face {
+    font-family: "Gotham";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("assets/fonts/Gotham-Bold.otf") format("otf");
+  }
+}
+
+
 @font-face {
     font-family: "Gotham", sans-serif;
     src: url("assets/fonts/Gotham-Book.otf") format("otf");
@@ -33,4 +62,9 @@
     font-weight: 400;
   }
   
-  
+.container {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  align-self: center;
+}

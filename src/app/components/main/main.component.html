@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="main flex flex-col items-start justify-start">
+        <div>
+            <p>Каталог/ Обувь/ Кроссовки/ Беговые</p>
+        </div>
+        <h1 class="text-[#071435] font-gotham text-2xl font-bold leading-8 tracking-normal text-left uppercase">Кроссовки мужские Skechers Sunny Dale</h1>
+        <div class="item-block flex">
+            <div class="item-photo-block flex flex-col">
+                <div class="w-[100%] flex flex-col">
+                    <img class="w-[400px] max-w-[400px] rounded-2xl" src="assets/skechers-1.png" alt="skechers-1">
+                    <app-swiper class="w-[400px] max-w-[400px] pt-[24px]"></app-swiper>
+                </div>
+            </div>
+            <div class="item-info-block">
+                <div>
+                    <div class="price-block flex flex-col gap-[24px] mt-[24px] mb-[48px] mx-[48px]">
+                        <p class="font-gotham font-medium text-base text-[#FF3D71]">
+                            {{ normalPrice | currency: " " }} цена без скидки
+                        </p>
+                        <div class="flex gap-[24px] items-center justify-start">
+                            <p class="font-gotham font-bold text-3xl" >
+                                {{ itemPrice | currency:'':'':'1.0-0' }} ₽
+                            </p>
+                            <div class="inline-flex items-center justify-center bg-[#FF3D71] border-0 rounded" >
+                                <p class="px-[8px] py-[2px] font-gotham font-bold text-base text-[#fff]">{{ salePercent }}%</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-start items-center gap-[24px] pb-8" >
+                            <div class="font-gotham font-bold text-sm text-[#828EAD] p-[8px] bg-[#F2F5F9] rounded" >12 шт в уп.</div>
+                            <label for="box-checkbox" class="checkbox-wrapper flex items-center justify-center gap-[14px] font-gotham font-medium text-sm text-[#000]">
+                                <input type="checkbox" name="box" id="box-checkbox">
+                                Заказ с упаковкой
+                            </label>
+                        </div>
+                        <hr/>  
+                    </div>
+                    <div class="features"></div>
+                </div>
+                <div class="item-decr-block">
+                    <h3 class="font-gotham text-2xl font-normal">Описание товара</h3>
+                    <p class="font-gotham text-lg font-normal">Создание приверженного покупателя специфицирует неопровержимый комплексный анализ ситуации. CTR существенно индуцирует из ряда вон выходящий SWOT-анализ. Воздействие на потребителя определяет возрастающий интеграл по поверхности, что известно даже школьникам. Отсюда естественно следует, что коммуникация уравновешивает косвенный фактор коммуникации. Поле направлений естественно допускает экспериментальный скачок функции, таким образом сбылась мечта идиота - утверждение полностью доказано. Арифметическая прогрессия притягивает линейно зависимый пул лояльных изданий.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'gotham': ['Gotham', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }
